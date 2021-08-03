@@ -77,4 +77,5 @@ app.use('/', (req, res) => {
     res.send("Kindly, use /bfhl as an end-point and POST method");
 })
 
-app.listen(8080, () => console.log('API is running on http://localhost:8080/bfhl'));
+const PORT = process.env.PORT || 5056;
+app.listen(PORT, () => console.log('API is running on http://localhost:8080/bfhl'));
